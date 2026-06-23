@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "name": "login-happy-path",
+      "safe_name": "login-happy-path",
+      "path": ".ordino/recordings/login-happy-path.json",
+      "summary": "Admin user enters credentials on the OrangeHRM login page and lands on the dashboard after submit.",
+      "pre_conditions": [
+        "user is on the login page with a fresh session"
+      ],
+      "post_conditions": [
+        "user is authenticated on the dashboard"
+      ],
+      "depends_on": [],
+      "pages_covered": [
+        "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+        "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"
+      ],
+      "started_by": "agent",
+      "recorded_at": "2026-06-22T14:44:34.496Z",
+      "step_count": 5,
+      "status": "finalized",
+      "thumbnail_path": "d:\\ordino 3\\new flow 6.22\\.ordino\\recordings\\login-happy-path\\step-001.png"
+    }
+  ]
+}

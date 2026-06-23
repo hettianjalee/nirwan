@@ -1,0 +1,124 @@
+{
+  "name": "login-happy-path",
+  "recorded_at": "2026-06-22T14:44:34.496Z",
+  "session_id": "104edcf0-bb85-4a98-a747-a0fe0fdeaa25",
+  "project_root": "d:\\ordino 3\\new flow 6.22",
+  "status": "finalized",
+  "steps": [
+    {
+      "seq": 1,
+      "action": "navigate",
+      "timestamp": "2026-06-22T14:44:34.592Z",
+      "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+      "chosen": null,
+      "candidates": [],
+      "screenshot_after": "step-001.png",
+      "actor": "agent",
+      "navigation_trigger": "explicit"
+    },
+    {
+      "seq": 2,
+      "action": "fill",
+      "timestamp": "2026-06-22T14:44:38.723Z",
+      "text": "Admin",
+      "chosen": {
+        "strategy": "role_name",
+        "value": "textbox[name=\"Username\"]",
+        "strength": "strong"
+      },
+      "candidates": [
+        {
+          "strategy": "role_name",
+          "value": "textbox[name=\"Username\"]",
+          "strength": "strong"
+        }
+      ],
+      "element": {
+        "role": "textbox",
+        "name": "Username",
+        "tag": "input",
+        "placeholder": "Username"
+      },
+      "screenshot_after": "step-002.png",
+      "actor": "agent"
+    },
+    {
+      "seq": 3,
+      "action": "fill",
+      "timestamp": "2026-06-22T14:44:41.646Z",
+      "text": "admin123",
+      "chosen": {
+        "strategy": "role_name",
+        "value": "textbox[name=\"Password\"]",
+        "strength": "strong"
+      },
+      "candidates": [
+        {
+          "strategy": "role_name",
+          "value": "textbox[name=\"Password\"]",
+          "strength": "strong"
+        }
+      ],
+      "element": {
+        "role": "textbox",
+        "name": "Password",
+        "tag": "input",
+        "placeholder": "Password"
+      },
+      "screenshot_after": "step-003.png",
+      "actor": "agent"
+    },
+    {
+      "seq": 4,
+      "action": "click",
+      "timestamp": "2026-06-22T14:44:47.562Z",
+      "chosen": {
+        "strategy": "role_name",
+        "value": "button[name=\"Login\"]",
+        "strength": "strong"
+      },
+      "candidates": [
+        {
+          "strategy": "role_name",
+          "value": "button[name=\"Login\"]",
+          "strength": "strong"
+        }
+      ],
+      "element": {
+        "role": "button",
+        "name": "Login",
+        "tag": "button"
+      },
+      "screenshot_after": "step-004.png",
+      "actor": "agent"
+    },
+    {
+      "seq": 5,
+      "action": "navigate",
+      "timestamp": "2026-06-22T14:44:47.988Z",
+      "url": "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index",
+      "chosen": null,
+      "candidates": [],
+      "screenshot_after": "step-005.png",
+      "actor": "agent",
+      "navigation_trigger": "implicit"
+    }
+  ],
+  "started_by": "agent",
+  "actor_summary": {
+    "human": 0,
+    "agent": 5
+  },
+  "pre_conditions": [
+    "user is on the login page with a fresh session"
+  ],
+  "post_conditions": [
+    "user is authenticated on the dashboard"
+  ],
+  "depends_on": [],
+  "pages_covered": [
+    "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"
+  ],
+  "summary": "Admin user enters credentials on the OrangeHRM login page and lands on the dashboard after submit."
+}
