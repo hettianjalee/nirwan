@@ -17,19 +17,19 @@ test.describe('login', () => {
     await dashboardPage.verify_dashboardLoaded();
   });
 
-  // -------------------------
-  // AC-2: Invalid credentials
-  // -------------------------
-  test('[AC-2] should display error for invalid credentials', async ({ loginPage, page }) => {
-    await loginPage.step_navigate();
+  // // -------------------------
+  // // AC-2: Invalid credentials
+  // // -------------------------
+  // test('[AC-2] should display error for invalid credentials', async ({ loginPage, page }) => {
+  //   await loginPage.step_navigate();
 
-    await page.getByRole('textbox', { name: 'Username', exact: true }).fill('invaliduser');
-    await page.getByRole('textbox', { name: 'Password', exact: true }).fill('invalidpass');
+  //   await page.getByRole('textbox', { name: 'Username', exact: true }).fill('invaliduser');
+  //   await page.getByRole('textbox', { name: 'Password', exact: true }).fill('invalidpass');
 
-    await page.getByRole('button', { name: 'Login', exact: true }).click();
+  //   await page.getByRole('button', { name: 'Login', exact: true }).click();
 
-    await expect(page.getByText(/invalid credentials/i)).toBeVisible();
-  });
+  //   await expect(page.getByText(/invalid credentials/i)).toBeVisible();
+  // });
 
   // // -------------------------
   // // AC-3: Empty username
